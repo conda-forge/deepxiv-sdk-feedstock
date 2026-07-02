@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.5"
+  version: "0.3.1"
 
 package:
   name: deepxiv-sdk
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/deepxiv-sdk/deepxiv_sdk-${{ version }}.tar.gz
-  sha256: cee3cc785c3f540710f7903ba6a9af6f98276eede93177bc25d1b95a34ec7594
+  sha256: 2634da1dbe45e46bf5213a8022327419b80d6a9d79a5fd7be287033cc70cab3a
 
 build:
   number: 0
@@ -37,8 +37,8 @@ tests:
         - deepxiv_sdk
       pip_check: true
       python_version:
-      - ${{ python_min }}.*
-      - "*"
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
